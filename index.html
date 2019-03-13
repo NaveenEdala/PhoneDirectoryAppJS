@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Number Directory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Mobile Number Directory</h1>
+        <p>Enter, Delete or View Numbers below!</p>
+    </div>
+    <br>
+    <div class="body">
+        <div class="button" align="center">
+            <button id="initial" class="addbutton" onclick="addFunction(initial)">Add your Number!</button>
+        </div>
+        <div id="inputform">
+            <form>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="fullname" placeholder="Name" oninput="inputinfo()" required>
+                <br><br>
+                <label for="mobnumber">Mobile Number</label><br>
+                <input type="text" id="mobnumber" name="mobilenumber" placeholder="Mobile Number" oninput="inputinfo()" required>
+            </form>
+        </div>
+        <div id="information">
+            <p style="color:blue;"><b>Entrant being added</b></p>
+            <p id="nameout"></p>
+            <p id="mobnumberout"></p>
+            <button class="submitbutton" onclick="submitentry()">Update to Directory</button>
+        </div>
+        <div id="tableofcontents">
+            <table id="census">
+              <tr>
+                <th>Name</th>
+                <th>Mobile Number</th>
+                <th></th>
+              </tr>
+            </table>
+        </div>
+        
+    </div>
+</body>
+</html>

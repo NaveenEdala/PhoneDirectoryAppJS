@@ -1,0 +1,88 @@
+.header {
+    padding: 35px;
+    text-align: center;
+    background: #bc891a;
+    color: white;
+    font-size: 25px;
+  }
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.addbutton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+.addbutton:hover {
+  background-color: green;
+}
+
+input[type=text] {
+    width: 33%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgb(28, 185, 185);
+    color: white;
+  }
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#inputform {
+    display: none;
+    padding: 20px 20px 20px 20px;
+}
+#information {
+    display: none;
+    padding: 15px 15px 15px 15px;
+}
+
+.submitbutton {
+    background-color: rgb(131, 133, 21);
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+.submitbutton:hover {
+  background-color: rgb(194, 176, 18);
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  th {
+    background-color: rgb(127, 22, 153);
+    color: white;
+  }
+
+#tableofcontents {
+    padding: 25px 25px 25px 25px;
+    display: none;
+}
+
