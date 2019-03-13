@@ -1,10 +1,13 @@
+/* Webkit modules also included for all animations to support Safari and similar browsers
+Compatible only with IE11*/
+
 .header {
     padding: 30px;
     text-align: center;
     background: #000000;
     color: white;
     font-size: 23px;
-  }
+  } 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     -webkit-animation-name: title; /* Safari 4.0 - 8.0 */

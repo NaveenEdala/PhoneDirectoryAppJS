@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
+    <!-- 
+    This application was made as a part of the recruitment process for a company.
+    Reach out to me on www.linkedin.com/in/naveen-edala for any queries!
+    -->
 <head>
-    <link rel="icon" href="assets/phicon.png">
+    <link rel="icon" href="assets/phicon.png"> <!--Icon beside title on tab top-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Number Directory</title>
@@ -9,6 +13,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="main.js"></script>
 </head>
+<!--Main viewport begins-->
 <body>
     <div class="header">
         <h1 id="title">Mobile Number Directory</h1>
@@ -20,9 +25,9 @@
     <br>
     <div class="body">
         <div class="button" align="center">
-            <button id="initial" class="addbutton" onclick="addFunction(initial)">Add your Number!</button>
+            <button id="initial" class="addbutton" onclick="addFunction(initial)">Add your Number!</button><!--Trigger for form-->
         </div>
-        <div id="inputform">
+        <div id="inputform"> <!--Hidden by default, displays as block after onClick trigger-->
             <form>
                 <label for="name">Name</label><br>
                 <input type="text" id="name" name="fullname" placeholder="Name" oninput="inputinfo()" required>
@@ -31,22 +36,24 @@
                 <input type="text" id="mobnumber" name="mobilenumber" placeholder="Mobile Number" oninput="inputinfo()" required>
             </form>
         </div>
-        <div id="information">
+        <div id="information"> <!--Displays only when onInput triggered in above form, hides if input is empty-->
             <p style="color:blue;"><b>Entrant being added</b></p>
             <p id="nameout"></p>
             <p id="mobnumberout"></p>
-            <button class="submitbutton" onclick="submitentry()">Update to Directory</button>
+            <button class="submitbutton" onclick="submitentry()">Update to Directory</button> <!--Trigger for table display and content filling. Submit action to table.-->
         </div>
-        <div id="tableofcontents">
+        <div id="tableofcontents"> <!--Displays only when one or more entries exist. Sets to hidden when entries deleted.-->
             <table id="census">
               <tr>
                 <th>Name</th>
                 <th>Mobile Number</th>
                 <th>Options</th>
               </tr>
+              <!--Entries fill automatically from the form with unique ids and remove buttons linked with each ID created entirely in JS-->
             </table>
         </div>
         
     </div>
 </body>
+<!--Viewport ends-->
 </html>
