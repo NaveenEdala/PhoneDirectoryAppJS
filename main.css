@@ -1,15 +1,87 @@
 .header {
     padding: 35px;
     text-align: center;
-    background: #bc891a;
+    background: #000000;
     color: white;
     font-size: 25px;
   }
 h1 {
     font-family: Arial, Helvetica, sans-serif;
+    -webkit-animation-name: title; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: title;
+    animation-duration: 1s;
 }
+
+@-webkit-keyframes title {
+  0%   {font-size: 1em;}
+  50%  {font-size: 5em;}
+  70% {color: greenyellow;}
+  100% {color: white;}
+}
+
+@keyframes title {
+  0%   {font-size: 1em;}
+  69%  {font-size: 2em;}
+  70% {color: greenyellow;}
+  100% {color: white; font-size: 2em;}
+}
+
+#word1 {
+  animation-name: word1;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#word2{
+  animation-name: word2;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#word3 {
+  animation-name: word3;
+  animation-delay: 3s;
+  animation-duration: 1s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@-webkit-keyframes word1 {
+  50%  {font-size: 1.1em;}
+  70% {color: greenyellow;}
+  100% {color: white;}
+}
+@keyframes word1 {
+  50%  {font-size: 1.1em;}
+  70% {color: greenyellow;}
+  100% {color: white;}
+}
+@-webkit-keyframes word2 {
+  50%  {font-size: 1.1em;}
+  70% {color: rgb(233, 73, 73);}
+  100% {color: white;}
+}
+@keyframes word2 {
+  50%  {font-size: 1.1em;}
+  70% {color: rgb(233, 73, 73);}
+  100% {color: white;}
+}
+@-webkit-keyframes word3 {
+  50%  {font-size: 1.1em;}
+  70% {color:gold;}
+  100% {color: white;}
+}
+@keyframes word3 {
+  50%  {font-size: 1.1em;}
+  70% {color: gold;}
+  100% {color: white;}
+}
+
+
+
+
 p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .addbutton {
@@ -20,11 +92,40 @@ p {
     text-align: center;
     font-size: 16px;
     cursor: pointer;
+    animation-name: vibrate;
+    animation-delay: 4s;
+    animation-duration: 0.4s;
+    animation-iteration-count: 3;
   }
   
 .addbutton:hover {
-  background-color: green;
+  animation: addbtn 0.5s;
+  animation-fill-mode: forwards;
 }
+
+@keyframes addbtn {
+  100% { background-color: rebeccapurple; color: white; }
+}
+
+@-webkit-keyframes vibrate {
+  50%  {font-size: 1.1em;}
+  70% {color:gold;}
+  100% {color: white;}
+}
+@keyframes vibrate {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(-1deg); }
+  20% { transform: rotate(1deg); }
+  30% { transform: rotate(0deg); }
+  40% { transform: rotate(1deg); }
+  50% { transform: rotate(-1deg); }
+  60% { transform: rotate(0deg); }
+  70% { transform: rotate(-1deg); }
+  80% { transform: rotate(1deg); }
+  90% { transform: rotate(0deg); }
+  100% { transform: rotate(-1deg); }
+}
+
 
 input[type=text] {
     width: 33%;
@@ -60,7 +161,12 @@ label {
   }
   
 .submitbutton:hover {
-  background-color: rgb(194, 176, 18);
+  animation: subbtn 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes subbtn {
+  100% { background-color: gold; color: white; }
 }
 
 table {
@@ -74,7 +180,12 @@ table {
     padding: 8px;
   }
   
-  tr:nth-child(even){background-color: #f2f2f2}
+  tr:nth-child(even){background-color: rgb(220, 238, 253)}
+  #census tr:hover {background-color: #ddd;}
+
+  tr {
+    background-color: aliceblue;
+  }
   
   th {
     background-color: rgb(127, 22, 153);
@@ -86,3 +197,21 @@ table {
     display: none;
 }
 
+.removebutton {
+  background-color: rgb(182, 52, 0);
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.removebutton:hover {
+  animation: rembtn 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rembtn {
+  100% { background-color: rgb(255, 20, 20); color: white; }
+}

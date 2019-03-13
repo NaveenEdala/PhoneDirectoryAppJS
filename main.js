@@ -40,15 +40,18 @@ function inputinfo() {
 }
 
 function submitentry() {
-    tablecount++;
+    tablecount++; clickcount++
     var datatable = document.getElementById("census");
+    var removebtn = document.createElement("button"); 
+    removebtn.setAttribute("class", "removebutton"); removebtn.innerHTML = "Remove Entry"; removebtn.setAttribute("onclick", "removedata()");
     var entry = document.createElement("tr"); entry.setAttribute("id", "Entry" + tablecount);
     var namecol = document.createElement("td");
     var numcol = document.createElement("td");
+    var remcol = document.createElement("td");
     var namecell = document.createTextNode(document.getElementById("name").value);
     var numcell = document.createTextNode(document.getElementById("mobnumber").value);
-    namecol.appendChild(namecell); numcol.appendChild(numcell);
-    entry.appendChild(namecol); entry.appendChild(numcol);
+    namecol.appendChild(namecell); numcol.appendChild(numcell); remcol.appendChild(removebtn);
+    entry.appendChild(namecol); entry.appendChild(numcol); entry.appendChild(remcol);
     datatable.appendChild(entry);
     closeEntry(initial);
     document.getElementById("tableofcontents").style.display = "block";
