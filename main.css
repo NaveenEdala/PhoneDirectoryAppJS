@@ -95,7 +95,7 @@ p {
     animation-name: vibrate;
     animation-delay: 4s;
     animation-duration: 0.4s;
-    animation-iteration-count: 3;
+    animation-iteration-count: 2;
   }
   
 .addbutton:hover {
@@ -108,9 +108,17 @@ p {
 }
 
 @-webkit-keyframes vibrate {
-  50%  {font-size: 1.1em;}
-  70% {color:gold;}
-  100% {color: white;}
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(-1deg); }
+  20% { transform: rotate(1deg); }
+  30% { transform: rotate(0deg); }
+  40% { transform: rotate(1deg); }
+  50% { transform: rotate(-1deg); }
+  60% { transform: rotate(0deg); }
+  70% { transform: rotate(-1deg); }
+  80% { transform: rotate(1deg); }
+  90% { transform: rotate(0deg); }
+  100% { transform: rotate(-1deg); }
 }
 @keyframes vibrate {
   0% { transform: rotate(0deg); }
@@ -214,4 +222,19 @@ table {
 
 @keyframes rembtn {
   100% { background-color: rgb(255, 20, 20); color: white; }
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: rgba(255, 255, 255, 0.788);
+  font-size: 75%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+a {
+  color: rgb(207, 196, 33);
 }
