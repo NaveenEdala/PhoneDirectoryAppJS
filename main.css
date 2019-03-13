@@ -1,9 +1,9 @@
 .header {
-    padding: 35px;
+    padding: 30px;
     text-align: center;
     background: #000000;
     color: white;
-    font-size: 25px;
+    font-size: 23px;
   }
 h1 {
     font-family: Arial, Helvetica, sans-serif;
@@ -224,17 +224,12 @@ table {
   100% { background-color: rgb(255, 20, 20); color: white; }
 }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgb(0, 0, 0);
-  color: rgba(255, 255, 255, 0.788);
-  font-size: 75%;
+.foo {
+  color: rgba(255, 255, 255, 0.589);
+  font-size: 50%;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 a {
-  color: rgb(207, 196, 33);
+  color: rgb(184, 173, 26);
 }
